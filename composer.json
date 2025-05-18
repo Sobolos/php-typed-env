@@ -1,0 +1,17 @@
+{
+    "name": "sobol/php-typed-env",
+    "description": "get typed env variables",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Sobol\\PhpTypedEnv\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sobolos",
+            "email": "germansobol@yandex.ru"
+        }
+    ],
+    "require": {}
+}
