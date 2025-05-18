@@ -5,9 +5,9 @@ namespace Sobol\PhpTypedEnv;
 
 class TypedEnv
 {
-    public function __construct()
+    public function __construct(string $directory = __DIR__)
     {
-        $envDir ??= dirname(__DIR__);
+        $envDir ??= dirname($directory);
         EnvLoader::loadEnv($envDir);
     }
 
