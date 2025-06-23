@@ -67,7 +67,7 @@ class TypedEnv
 
         $return = filter_var($value, FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE);
 
-        if (!$return) {
+        if (!is_bool($return)) {
             throw new TypedEnvException("Invalid boolean value for $key: $value");
         }
 
