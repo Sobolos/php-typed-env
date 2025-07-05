@@ -4,9 +4,18 @@ declare(strict_types=1);
 namespace Sobol\PhpTypedEnv;
 
 use Dotenv\Dotenv;
+use Dotenv\Exception\InvalidEncodingException;
+use Dotenv\Exception\InvalidFileException;
 
 class EnvLoader
 {
+
+    /**
+     * @param string $filePath
+     * @return void
+     *
+     * @throws InvalidEncodingException|InvalidFileException
+     */
     public static function loadEnv(string $filePath): void
     {
         $files = ['.env'];
